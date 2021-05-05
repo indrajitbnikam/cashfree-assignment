@@ -1,0 +1,89 @@
+.comment-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .current-comment {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+
+    .image {
+      height: 100%;
+      align-self: flex-start;
+      margin-right: 20px;
+
+      .user-initials {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: yellowgreen;
+
+        display: grid;
+        place-items: center;
+        color: white;
+      }
+    }
+
+    .info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .name-date {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 4px;
+
+        .name {
+          font-size: 14px;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+
+        .date {
+          color: #ccc;
+          font-weight: normal;
+          font-size: 12px;
+        }
+      }
+
+      .comment {
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+
+      .actions {
+        display: flex;
+
+        .action {
+          color: #ccc;
+          font-weight: normal;
+          font-size: 12px;
+          margin-right: 5px;
+
+          &.delete {
+            color: orange;
+
+            &:hover {
+              color: red;
+            }
+          }
+
+          &:hover {
+            color: darkslategray;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .replies-container {
+    width: auto;
+    padding-left: 24px;
+    margin-left: 30px;
+    border-left: 1px solid lightblue;
+  }
+
+}

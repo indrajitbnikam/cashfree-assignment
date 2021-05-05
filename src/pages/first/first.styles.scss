@@ -1,0 +1,57 @@
+.comment-module {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  .user-selection {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .comment-section {
+    width: 100%;
+  }
+
+  .new-comment {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+      margin-top: 20px;
+    }
+
+    .reply-buttons {
+      display: flex;
+    }
+
+    .btn {
+      margin-top: 20px;
+      font-size: 16px;
+      width: 150px;
+      padding: 8px 10px;
+      border-radius: 4px;
+      margin-right: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.btn-primary {
+        border: 1px solid yellowgreen;
+        background-color: yellowgreen;
+        color: white;
+      }
+
+      &.btn-secondary {
+        border: 1px solid lightslategrey;
+        background-color: lightslategrey;
+        color: white;
+      }
+    }
+  }
+}
